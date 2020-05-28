@@ -1,0 +1,227 @@
+namespace ca.mcgill.ecse.pas.model;
+
+class PersonalAlarmSystem {
+  Integer emergencyNumber;
+  Time checkInTimeStart;
+  Time checkInTimeEnd;
+  1 <@>- * Person;
+  1 <@>- * Patient;
+  1 <@>- * Relative;
+  1 <@>- * Agent;
+  1 <@>- * Pendant;  
+  1 <@>- * EmergencyCall;
+  1 <@>- * DailyCheckIn;
+
+  public Date getToday() {
+    // TODO
+    return null;
+  }
+
+  public Time getCurrentTime() {
+    // TODO
+    return null;
+  }
+
+  public Date getTomorrow() {
+    // TODO
+    return null;
+  }
+
+  public Agent findAvailableAgent() {
+    // TODO
+    return null;
+  }
+}
+
+class Person {
+  unique name;
+  String address;
+  Integer phoneNumber;
+  1 -- 0..2 UserRole;  
+}
+
+class UserRole {
+  abstract;
+}
+
+class Patient {
+  isA UserRole;
+  Date nextCheckIn;
+  1 -- 1 Pendant;
+  * -- * Relative;
+  * -> 1 Relative currentRelative;
+  1 -- * EmergencyCall;
+  1 -- * DailyCheckIn;  
+
+  status {
+    Idle {
+      postpone(Date nextCheckInDate) / {
+        setNextCheckIn(nextCheckInDate);
+      } -> Idle;
+      dailyCheckIn [isCorrectTimeForCheckIn()] / {
+        PersonalAlarmSystem pas = getPersonalAlarmSystem();
+        addDailyCheckIn(pas.getToday(), pas.getCurrentTime(), pas);
+        setNextCheckIn(pas.getTomorrow());
+      } -> Idle;
+      dailyCheckInMissed / {
+        initiateEmergencyHandling(true);
+      } -> InEmergency;
+      emergencyCall / {
+        initiateEmergencyHandling(false);
+      } -> InEmergency;
+    }
+    InEmergency {
+      emergencyHandled / {
+        setNextCheckIn(getPersonalAlarmSystem().getTomorrow());
+      } -> Idle;
+    }
+  }
+
+  private Boolean isCorrectTimeForCheckIn() {
+    PersonalAlarmSystem pas = getPersonalAlarmSystem();
+    Time current = pas.getCurrentTime();
+    Time start = pas.getCheckInTimeStart();
+    Time end = pas.getCheckInTimeEnd();
+    if (current.getTime() >= start.getTime() && current.getTime() <= end.getTime()) {
+      Date next = getNextCheckIn();
+      Date today = pas.getToday();
+      if (next.equals(today)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  private initiateEmergencyHandling(Boolean dueToMissedCheckIn) {
+    PersonalAlarmSystem pas = getPersonalAlarmSystem();
+    Agent a = pas.findAvailableAgent();
+    addEmergencyCall(pas.getToday(), pas.getCurrentTime(), 0, "", false, dueToMissedCheckIn, a, pas);
+  }
+}
+
+class Relative {
+  isA UserRole;
+}
+
+class Agent {
+  isA UserRole;
+}
+
+class Pendant {
+  unique Integer id;
+}
+
+class EmergencyCall {
+  autounique id;
+  Date datestamp;
+  Time timestamp;
+  Integer duration;
+  String comment;
+  Boolean emergencyServicesContacted;
+  Boolean triggeredByMissedDailyCheckIn;
+  * -- 1 Agent;
+  * -- 0..1 Relative;
+
+  status {
+    InEmergency {
+      updateComment(String comment) / {
+        setComment(comment);
+      } -> InEmergency;
+      emergencyHandled / {
+        setDuration(calculateDuration());
+        getPatient().emergencyHandled();
+      } -> Final;
+      ContactingPatient {
+        contactingRelative / {
+          setRelative(getPatient().getCurrentRelative());
+        } -> ContactingRelative;
+      }
+      ContactingRelative {
+        contactingEmergencyServices / {
+          setEmergencyServicesContacted(true);
+        } -> ContactingEmergencyServices;
+      }
+      ContactingEmergencyServices {
+      }
+    }
+  }
+
+  public static EmergencyCall getWithId(Integer emergencyID) {
+    // TODO
+    return null;
+  }
+
+  private Integer calculateDuration() {
+    Time current = getPersonalAlarmSystem().getCurrentTime();
+    Long duration = current.getTime() - (getDatestamp().getTime() + getTimestamp().getTime());
+    return duration.intValue();
+  }
+}
+
+class DailyCheckIn {
+  Date datestamp;
+  Time timestamp;
+}//$?[End_of_model]$?
+
+namespace -;
+
+class PersonalAlarmSystem
+{
+  position 259 59 196 91;
+  position.association Person__PersonalAlarmSystem 0,42 179,11;
+  position.association PersonalAlarmSystem__UserRole 9,91 30,0;
+  position.association Patient__PersonalAlarmSystem 4,90 123,0;
+  position.association PersonalAlarmSystem__Relative 31,90 30,0;
+  position.association Agent__PersonalAlarmSystem 59,90 106,0;
+  position.association Pendant__PersonalAlarmSystem 109,90 101,0;
+  position.association EmergencyCall__PersonalAlarmSystem 212,55 132,0;
+  position.association DailyCheckIn__PersonalAlarmSystem 136,90 109,0;
+}
+
+class Person
+{
+  position 44 77 147 90;
+  position.association Person__UserRole 26,90 30,0;
+}
+
+class UserRole
+{
+  position 50 230 109 45;
+}
+
+class Patient
+{
+  position 32 331 150 56;
+  position.association DailyCheckIn__Patient 88,56 0,10;
+  position.association EmergencyCall__Patient 137,50 0,44;
+  position.association Patient__Relative 151,5 0,6;
+  position.association Patient__Relative:current 151,35 0,34;
+  position.association Patient__Relative:currentRelative 150,34 0,30;
+}
+
+class Relative
+{
+  position 315 335 114 40;
+}
+
+class Agent
+{
+  position 450 327 114 40;
+}
+
+class Pendant
+{
+  position 51 454 114 56;
+}
+
+class EmergencyCall
+{
+  position 486 414 330 141;
+  position.association EmergencyCall__Relative 0,10 93,40;
+  position.association Agent__EmergencyCall 66,0 112,40;
+}
+
+class DailyCheckIn
+{
+  position 213 451 137 56;
+}

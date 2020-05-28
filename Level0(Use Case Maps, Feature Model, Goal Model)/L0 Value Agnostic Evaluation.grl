@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<grl-catalog catalog-name="URNspec" description="" author="rper0014">
+    <element-def>
+        <intentional-element id="11" name="Personal Alarm System" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="13" name="Emergency Call" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="15" name="Registration" description="" type="Task" decompositiontype="Xor"/>
+        <intentional-element id="19" name="Call Center" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="21" name="Pendant" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="23" name="Base Station" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="25" name="Daily CheckIn" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="27" name="Postpone CheckIn" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="41" name="Follow-up Missed CheckIns" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="1653" name="Improve help for patients in an emergency situation" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1655" name="Improve the emergency response time" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1657" name="Improve correctness of information about the patient in the emergency situation" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1659" name="Minimize the notification delay of the emergency situation" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1673" name="Minimize health issues" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1675" name="Maintain physical health" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1677" name="Increase feeling of being cared for" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1679" name="Maintain mental health" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1681" name="Increase time spent with relatives" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1683" name="Minimize delay of help in an emergency" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1685" name="Maintain independence" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1687" name="Maintain day to day welbeing" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1689" name="Increase help available for daily activities" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1720" name="Maximize the number of patients handled per day" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1722" name="Increase quality of help provided to patients" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1724" name="Minimize number of calls to help patients" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1726" name="Minimize time per call" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1728" name="Increase correctness of information about patients" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1730" name="Improve the communication with emergency services in an emergency situation" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1847" name="Ensuring health of loved once" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1849" name="Mimimizing time spent for care" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1851" name="Minimize cost for care" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1917" name="Minimize ongoing cost" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1919" name="Minimize upfront cost" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1921" name="Minimize one time cost" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1925" name="Minimize number of visits" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1927" name="Share caring time with other relatives" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="1931" name="Ensure physical health" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1933" name="Ensuring mental health" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1935" name="Increase help with daily activites" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1939" name="Improve monitoring of health status" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1941" name="Increase availability for patients" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="1945" name="Regular Visits" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="1947" name="Invite them over" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="1966" name="Nursing Home" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="1980" name="Live in the same place" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="1986" name="Live closer" description="" type="Task" decompositiontype="And"/>
+        <intentional-element id="2077" name="Privacy[P]" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2079" name="Capable" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2081" name="Freedom[P]" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2095" name="Maximize the ability to complete a process independently" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2106" name="Minimize visibility of incapabilities to others" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2121" name="Maximize independent living[P]" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2141" name="Minimize tools that need to be carried everywhere" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2159" name="Maximize profit" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2161" name="Improve quality of the emergency care application" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2163" name="Maximize the number of units sold" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2165" name="Minimize the cost per unit" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2167" name="Improve the ongoing service (call center)" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2169" name="Improve the quality of pendant" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2171" name="Minimize the development cost" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2173" name="Minimize ongoing cost of call center" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2184" name="Self-direction[P]" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2190" name="Achivement" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2242" name="Maximize the simplicity of UI" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="2250" name="Maximize living in their own house" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4007" name="Freedom[R]" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4009" name="Independent[R]" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4011" name="Self-respect[R]" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4013" name="Self-direction[R]" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4022" name="Increase time for pesonal life" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4026" name="Maximize independent living[R]" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4030" name="Increase the feeling of caring loved once (patient)" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4128" name="Increase independence of patients" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4137" name="Maximize availability to help patient in an emergency" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4139" name="Maximize help available for day to day activities" description="" type="Goal" decompositiontype="And"/>
+        <intentional-element id="4365" name="Increase the number of visits for patients" description="" type="Goal" decompositiontype="And"/>
+    </element-def>
+    <link-def>
+        <contribution name="Mandatory33" description="" srcid="13" destid="11" contributiontype="Help" quantitativeContribution="20" correlation="false"/>
+        <contribution name="Mandatory34" description="" srcid="25" destid="11" contributiontype="Help" quantitativeContribution="20" correlation="false"/>
+        <contribution name="Mandatory35" description="" srcid="23" destid="11" contributiontype="Help" quantitativeContribution="20" correlation="false"/>
+        <contribution name="Mandatory36" description="" srcid="19" destid="11" contributiontype="Help" quantitativeContribution="20" correlation="false"/>
+        <contribution name="Mandatory38" description="" srcid="21" destid="13" contributiontype="Help" quantitativeContribution="50" correlation="false"/>
+        <contribution name="Mandatory39" description="" srcid="27" destid="25" contributiontype="Help" quantitativeContribution="50" correlation="false"/>
+        <contribution name="Mandatory53" description="" srcid="41" destid="25" contributiontype="Help" quantitativeContribution="50" correlation="false"/>
+        <contribution name="Contribution1663" description="" srcid="1655" destid="1653" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1664" description="" srcid="1657" destid="1653" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1666" description="" srcid="1659" destid="1655" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1693" description="" srcid="1675" destid="1673" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1694" description="" srcid="1679" destid="1673" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1704" description="" srcid="1681" destid="1677" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1706" description="" srcid="1689" destid="1677" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1707" description="" srcid="1677" destid="1679" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1708" description="" srcid="1687" destid="1679" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1709" description="" srcid="1683" destid="1679" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1710" description="" srcid="1683" destid="1675" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1711" description="" srcid="1687" destid="1675" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1740" description="" srcid="1724" destid="1720" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1741" description="" srcid="1726" destid="1720" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1743" description="" srcid="1730" destid="1722" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1951" description="" srcid="1931" destid="1847" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1952" description="" srcid="1933" destid="1847" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1953" description="" srcid="1935" destid="1847" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1956" description="" srcid="1917" destid="1851" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1957" description="" srcid="1919" destid="1851" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1958" description="" srcid="1921" destid="1851" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1959" description="" srcid="1939" destid="1931" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1960" description="" srcid="1941" destid="1933" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1961" description="" srcid="1941" destid="1935" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution1990" description="" srcid="1966" destid="1917" contributiontype="SomeNegative" quantitativeContribution="-75" correlation="false"/>
+        <contribution name="Contribution2177" description="" srcid="2163" destid="2159" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution2178" description="" srcid="2165" destid="2159" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution2179" description="" srcid="2167" destid="2161" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution2180" description="" srcid="2169" destid="2161" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution2181" description="" srcid="2173" destid="2165" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution2182" description="" srcid="2171" destid="2165" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution2359" description="" srcid="13" destid="1659" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution2361" description="" srcid="13" destid="1657" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution2434" description="" srcid="15" destid="1657" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution2437" description="" srcid="1673" destid="1685" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution2511" description="" srcid="13" destid="1683" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution2574" description="" srcid="25" destid="1687" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution2659" description="" srcid="11" destid="1681" contributiontype="SomeNegative" quantitativeContribution="-75" correlation="false"/>
+        <contribution name="Contribution2733" description="" srcid="27" destid="1687" contributiontype="SomeNegative" quantitativeContribution="-75" correlation="false"/>
+        <contribution name="Contribution2903" description="" srcid="41" destid="2173" contributiontype="SomeNegative" quantitativeContribution="-75" correlation="false"/>
+        <contribution name="Contribution2906" description="" srcid="41" destid="2167" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3030" description="" srcid="25" destid="1724" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3114" description="" srcid="27" destid="1724" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3264" description="" srcid="41" destid="1724" contributiontype="SomeNegative" quantitativeContribution="-75" correlation="false"/>
+        <contribution name="Contribution3391" description="" srcid="15" destid="1726" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3392" description="" srcid="15" destid="1728" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3394" description="" srcid="1728" destid="1730" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3602" description="" srcid="1945" destid="1851" contributiontype="SomeNegative" quantitativeContribution="-75" correlation="false"/>
+        <contribution name="Contribution3604" description="" srcid="11" destid="1921" contributiontype="SomeNegative" quantitativeContribution="-75" correlation="false"/>
+        <contribution name="Contribution3606" description="" srcid="1945" destid="1921" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3607" description="" srcid="1945" destid="1919" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3609" description="" srcid="1947" destid="1919" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3610" description="" srcid="1947" destid="1921" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3611" description="" srcid="1947" destid="1917" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3613" description="" srcid="1980" destid="1919" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3615" description="" srcid="1980" destid="1921" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3617" description="" srcid="1980" destid="1917" contributiontype="SomeNegative" quantitativeContribution="-75" correlation="false"/>
+        <contribution name="Contribution3794" description="" srcid="25" destid="1939" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3871" description="" srcid="11" destid="1925" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3873" description="" srcid="11" destid="1917" contributiontype="SomeNegative" quantitativeContribution="-75" correlation="false"/>
+        <contribution name="Contribution3874" description="" srcid="11" destid="1919" contributiontype="SomeNegative" quantitativeContribution="-75" correlation="false"/>
+        <contribution name="Contribution3995" description="" srcid="13" destid="1939" contributiontype="SomePositive" quantitativeContribution="75" correlation="false"/>
+        <contribution name="Contribution3998" description="" srcid="1925" destid="1941" contributiontype="SomeNegative" quantitativeContribution="-75" correlation="false"/>
+        <contribution name="Contribution4000" description="" srcid="1941" destid="1849" contributiontype="SomeNegative" quantitativeContribution="-75" correlation="false"/>
+        <contribution name="Mandatory32" description="" srcid="15" destid="11" contributiontype="Help" quantitativeContribution="20" correlation="false"/>
+    </link-def>
+    <actor-def>
+        <actor id="1647" name="Emergency Service" description=""/>
+        <actor id="1669" name="Patient" description=""/>
+        <actor id="1714" name="Agent at call center" description=""/>
+        <actor id="1868" name="Relative" description=""/>
+        <actor id="2153" name="Service Provider (the company)" description=""/>
+        <actor id="4003" name="Realtive" description=""/>
+    </actor-def>
+    <actor-IE-link-def>
+        <actorContIE actor="1647" ie="1653"/>
+        <actorContIE actor="1647" ie="1655"/>
+        <actorContIE actor="1647" ie="1657"/>
+        <actorContIE actor="1647" ie="1659"/>
+        <actorContIE actor="1647" ie="13"/>
+        <actorContIE actor="1647" ie="15"/>
+        <actorContIE actor="1669" ie="1673"/>
+        <actorContIE actor="1669" ie="1675"/>
+        <actorContIE actor="1669" ie="1677"/>
+        <actorContIE actor="1669" ie="1679"/>
+        <actorContIE actor="1669" ie="1681"/>
+        <actorContIE actor="1669" ie="1683"/>
+        <actorContIE actor="1669" ie="1685"/>
+        <actorContIE actor="1669" ie="1687"/>
+        <actorContIE actor="1669" ie="1689"/>
+        <actorContIE actor="1669" ie="13"/>
+        <actorContIE actor="1669" ie="25"/>
+        <actorContIE actor="1669" ie="11"/>
+        <actorContIE actor="1669" ie="27"/>
+        <actorContIE actor="1714" ie="1720"/>
+        <actorContIE actor="1714" ie="1722"/>
+        <actorContIE actor="1714" ie="1724"/>
+        <actorContIE actor="1714" ie="1726"/>
+        <actorContIE actor="1714" ie="1728"/>
+        <actorContIE actor="1714" ie="1730"/>
+        <actorContIE actor="1714" ie="25"/>
+        <actorContIE actor="1714" ie="27"/>
+        <actorContIE actor="1714" ie="41"/>
+        <actorContIE actor="1714" ie="15"/>
+        <actorContIE actor="1868" ie="1847"/>
+        <actorContIE actor="1868" ie="1849"/>
+        <actorContIE actor="1868" ie="1851"/>
+        <actorContIE actor="1868" ie="1917"/>
+        <actorContIE actor="1868" ie="1919"/>
+        <actorContIE actor="1868" ie="1925"/>
+        <actorContIE actor="1868" ie="1931"/>
+        <actorContIE actor="1868" ie="1933"/>
+        <actorContIE actor="1868" ie="1935"/>
+        <actorContIE actor="1868" ie="1939"/>
+        <actorContIE actor="1868" ie="1941"/>
+        <actorContIE actor="1868" ie="13"/>
+        <actorContIE actor="1868" ie="25"/>
+        <actorContIE actor="1868" ie="11"/>
+        <actorContIE actor="1868" ie="1851"/>
+        <actorContIE actor="1868" ie="1917"/>
+        <actorContIE actor="1868" ie="1919"/>
+        <actorContIE actor="1868" ie="1921"/>
+        <actorContIE actor="1868" ie="1927"/>
+        <actorContIE actor="1868" ie="1945"/>
+        <actorContIE actor="1868" ie="1947"/>
+        <actorContIE actor="1868" ie="1966"/>
+        <actorContIE actor="1868" ie="1980"/>
+        <actorContIE actor="1868" ie="1986"/>
+        <actorContIE actor="1868" ie="11"/>
+        <actorContIE actor="2153" ie="2159"/>
+        <actorContIE actor="2153" ie="2161"/>
+        <actorContIE actor="2153" ie="2163"/>
+        <actorContIE actor="2153" ie="2165"/>
+        <actorContIE actor="2153" ie="2167"/>
+        <actorContIE actor="2153" ie="2169"/>
+        <actorContIE actor="2153" ie="2171"/>
+        <actorContIE actor="2153" ie="2173"/>
+        <actorContIE actor="2153" ie="41"/>
+    </actor-IE-link-def>
+</grl-catalog>

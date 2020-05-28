@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ucmscenarios:ScenarioSpec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ucmscenarios="http:///ucmscenarios.ecore" name="URNspec" filename="L0 Work Flow Evaluation_withMetaData.jucm" created="November 1, 2019 12:03:21 PM AEDT" modified="January 31, 2020 5:29:42 PM AEDT" specVersion="137">
+  <components id="22" name="Call Center"/>
+  <components id="23" name="Relative"/>
+  <components id="24" name="Patient"/>
+  <components id="25" name="Personal Alarm System"/>
+  <groups id="26" name="ScenarioGroup5">
+    <scenarios id="27" name="ScenarioDef6"/>
+  </groups>
+</ucmscenarios:ScenarioSpec>

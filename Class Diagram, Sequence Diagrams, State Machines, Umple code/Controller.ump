@@ -1,0 +1,100 @@
+namespace ca.mcgill.ecse.pas.controller;
+
+class Controller {
+   depend ca.mcgill.ecse.pas.model.*;
+   depend java.sql.Date;
+   depend java.util.List;
+
+  public static register(String patientName, String patientAddress, Integer patientPhoneNumber, Integer pendantID, String relativeName, String relativeAddress, Integer relativePhoneNumber) {
+    PersonalAlarmSystem pas = getSystem();
+    Person personRelative = pas.addPerson(relativeName, relativeAddress, relativePhoneNumber);
+    Relative relative = pas.addRelative(personRelative);
+    Person personPatient = pas.addPerson(patientName, patientAddress, patientPhoneNumber);
+    Patient patient = new Patient(personPatient, pas.getTomorrow(), pendantID, pas, relative, pas);
+    prepareRegistrationConfirmation();
+  }
+
+  public static postpone(Date nextCheckIn, Integer pendantID) {
+    Pendant pendant = Pendant.getWithId(pendantID);
+    Patient patient = pendant.getPatient();
+    patient.postpone(nextCheckIn);
+    prepareAcknowledgementPostpone();
+  }
+
+  public static dailyCheckIn(Integer pendantID) {
+    Pendant pendant = Pendant.getWithId(pendantID);
+    Patient patient = pendant.getPatient();
+    patient.dailyCheckIn();
+    prepareAcknowledgementCheckIn();
+  }
+
+  public static dailyCheckInMissed(Integer pendantID) {
+    Pendant pendant = Pendant.getWithId(pendantID);
+    Patient patient = pendant.getPatient();
+    patient.dailyCheckInMissed();
+  }
+
+  public static emergencyCall(Integer pendantID) {
+    Pendant pendant = Pendant.getWithId(pendantID);
+    Patient patient = pendant.getPatient();
+    patient.emergencyCall();
+  }
+
+  public static updateComment(String comment, Integer emergencyID) {
+    EmergencyCall emergency = EmergencyCall.getWithId(emergencyID);
+    emergency.updateComment(comment);
+  }
+
+  public static emergencyHandled(Integer emergencyID) {
+    EmergencyCall emergency = EmergencyCall.getWithId(emergencyID);
+    emergency.emergencyHandled();
+  }
+
+  public static contactingRelative(Integer emergencyID) {
+    EmergencyCall emergency = EmergencyCall.getWithId(emergencyID);
+    emergency.contactingRelative();
+  }
+
+  public static contactingEmergencyServices(Integer emergencyID) {
+    EmergencyCall emergency = EmergencyCall.getWithId(emergencyID);
+    emergency.contactingEmergencyServices();
+  }
+
+  private static PersonalAlarmSystem getSystem() {
+    // TODO
+    return null;
+  }
+
+  private static String prepareRegistrationConfirmation() {
+    // TODO
+    return null;
+  }
+
+  private static String prepareAcknowledgementPostpone() {
+    // TODO
+    return null;
+  }
+
+  private static String prepareAcknowledgementCheckIn() {
+    // TODO
+    return null;
+  }
+
+  public static PatientTO getPatient(Integer patientID) {
+    // TODO
+    return null;
+  }
+
+  public static List<PatientTO> getPatientWithMissedCheckIn() {
+    // TODO
+    return null;
+  }
+}
+
+class PatientTO {
+  String name;
+  String address;
+  Integer phoneNumber;
+  Date nextCheckIn;
+  Integer pendantID;
+}
